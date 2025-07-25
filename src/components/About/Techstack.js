@@ -10,7 +10,13 @@ import {
   DiGit,
   DiJava,
 } from "react-icons/di";
-import { SiC, SiFirebase, SiNextdotjs, SiPostgresql } from "react-icons/si";
+import {
+  SiC,
+  SiFirebase,
+  SiNextdotjs,
+  SiPostgresql,
+  SiJupyter,
+} from "react-icons/si";
 //import { TbBrandGolang } from "react-icons/tb";
 
 function Techstack() {
@@ -38,6 +44,9 @@ function Techstack() {
         <SiNextdotjs />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
+        <SiJupyter />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
         <DiGit />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
@@ -49,7 +58,6 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons">
         <DiPython />
       </Col>
-      
     </Row>
   );
 }
