@@ -147,10 +147,8 @@ C:.
     |   |   home-main.svg
     |   |   logo.png
     |   |   pre.svg
-    |   |   Soumyajit_Behera-BIT_MESRA.pdf
     |   |   
     |   \---Projects
-    |           blog.png
     |           firedetection.png
     |           job-portal.png
     |           onlinebanking.png
@@ -203,9 +201,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 <div align="center">
-  Made with ❤️ by [Your Name]
+  Made with ❤️ by Ashish
   <br>
-  <a href="your-portfolio-url">Live Demo</a> • 
-  <a href="mailto:your-email">Contact</a> • 
-  <a href="your-linkedin">LinkedIn</a>
+  <a href="https://dubey.vercel.app">Live Demo</a> • 
+  <a href="ashishdubey7224@gmil.com">Contact</a> • 
+  <a href="https://www.linkedin.com/in/dubey-ashish2024/">LinkedIn</a>
 </div>
