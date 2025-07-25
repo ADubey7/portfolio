@@ -24,7 +24,7 @@ function Home2() {
               <br />
               <br />I am fluent in classics like
               <i>
-                <b className="purple"> Java, Javascript, C, Python. </b>
+                <b className="purple"> Java, JavaScript, C, Python. </b>
               </i>
               <br />
               <br />
@@ -35,12 +35,26 @@ function Home2() {
               </i>
               <br />
               <br />
+              I’m also passionate about&nbsp;
+              <i>
+                <b className="purple">Data Science</b>
+              </i>
+              &nbsp;and love solving problems using&nbsp;
+              <i>
+                <b className="purple">Machine Learning</b>
+              </i>
+              &nbsp;and&nbsp;
+              <i>
+                <b className="purple">Data Structures & Algorithms (DSA)</b>.
+              </i>
+              <br />
+              <br />
               Whenever possible, I also apply my passion for developing products
               with <b className="purple">Java</b> and
               <i>
                 <b className="purple"> Spring Boot Framework</b>
               </i>
-              &nbsp; as well as integrating
+              &nbsp;as well as integrating
               <i>
                 <b className="purple"> Machine Learning models </b>
               </i>
