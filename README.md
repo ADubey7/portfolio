@@ -1,76 +1,210 @@
-<h2 align="center">
-  Portfolio Website - v2.0<br/>
-  <a href="https://soumyajit.vercel.app/" target="_blank">soumyajit.tech</a>
-</h2>
+# 🚀 Personal Portfolio Website
+
 <div align="center">
-  <img alt="Demo" src="./Images/readme-img1.png" />
+  <img src="C:\Users\ashis\Portfolio\images\desktopversion.png" alt="Portfolio Preview" width="800px" />
 </div>
 
-<br/>
+<div align="center">
+  
+  ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+  ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+  ![Express.js](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)
+  ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+  ![VSCode](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
+  ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
-<center>
+</div>
 
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) &nbsp;
-[![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com) &nbsp;
-[![forthebadge](https://forthebadge.com/images/badges/open-source.svg)](https://forthebadge.com) &nbsp;
-![GitHub Repo stars](https://img.shields.io/github/stars/soumyajit4419/Portfolio?color=red&logo=github&style=for-the-badge) &nbsp;
-![GitHub forks](https://img.shields.io/github/forks/soumyajit4419/Portfolio?color=red&logo=github&style=for-the-badge)
+## 📋 Table of Contents
+- [Overview](#overview)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
 
-</center>
+## 🌟 Overview
 
-<h3 align="center">
-    🔹
-    <a href="https://github.com/soumyajit4419/Portfolio/issues">Report Bug</a> &nbsp; &nbsp;
-    🔹
-    <a href="https://github.com/soumyajit4419/Portfolio/issues">Request Feature</a>
-</h3>
+A modern, responsive personal portfolio website built with React.js and styled with React-Bootstrap. This project showcases a clean, professional design with smooth animations and an intuitive user interface.
 
-## TL;DR
+## ✨ Features
 
-You can fork this repo to modify and make changes of your own. Please give me proper credit by linking back to [Soumyajit4419](https://github.com/soumyajit4419/Portfolio). Thanks!
+- **📖 Multi-Page Layout** - Organized sections for easy navigation
+- **🎨 Custom Styling** - Built with React-Bootstrap and CSS3 with easily customizable color schemes
+- **📱 Fully Responsive** - Optimized for all device sizes and screen resolutions
+- **⚡ Fast Performance** - Optimized build and deployment ready
+- **🔧 Easy Customization** - Well-structured components for easy modifications
 
-## Built With
+## 🛠 Tech Stack
 
-My personal portfolio <a href="https://soumyajit.vercel.app/" target="_blank">soumyajit.tech</a> which features some of my github projects as well as my resume and technical skills.<br/>
+| Technology | Purpose |
+|------------|---------|
+| **React.js** | Frontend framework for building user interfaces |
+| **Node.js** | JavaScript runtime environment |
+| **Express.js** | Web application framework for Node.js |
+| **CSS3** | Styling and animations |
+| **React-Bootstrap** | UI component library |
+| **VSCode** | Development environment |
+| **Vercel** | Deployment platform |
 
-This project was built using these technologies.
+## 🚀 Getting Started
 
-- React.js
-- Node.js
-- Express.js
-- CSS3
-- VsCode
-- Vercel
+### Prerequisites
 
-## Features
+Before you begin, ensure you have the following installed:
+- [Node.js](https://nodejs.org/) (version 14.0 or higher)
+- [Git](https://git-scm.com/)
+- Code editor (VSCode recommended)
 
-**📖 Multi-Page Layout**
+### 📥 Installation
 
-**🎨 Styled with React-Bootstrap and Css with easy to customize colors**
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd portfolio
+   ```
 
-**📱 Fully Responsive**
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-## Getting Started
+3. **Start the development server**
+   ```bash
+   npm start
+   ```
 
-Clone down this repository. You will need `node.js` and `git` installed globally on your machine.
+4. **View the application**
+   Open [http://localhost:3000](http://localhost:3000) in your browser
 
-## 🛠 Installation and Setup Instructions
+The page will automatically reload when you make changes to the code.
 
-1. Installation: `npm install`
+🌐 Live Demo 
+(Link coming soon)
 
-2. In the project directory, you can run: `npm start`
+## 📖 Usage
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-The page will reload if you make edits.
+### Customizing Your Portfolio
 
-## Usage Instructions
+1. **Navigate to the components directory:**
+   ```
+   /src/components/
+   ```
 
-Open the project folder and Navigate to `/src/components/`. <br/>
-You will find all the components used and you can edit your information accordingly.
+2. **Edit the following files to customize your information:**
+   - Update personal information in respective component files
+   - Modify colors and styling in CSS files
+   - Replace images in the `/images` directory
 
-### Show your support
+3. **Key areas to customize:**
+   - Personal details and bio
+   - Skills and technologies
+   - Project showcases
+   - Contact information
 
-Give a ⭐ if you like this website!
+## 📁 Project Structure
 
-<a href="https://www.buymeacoffee.com/soumyajit4419" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="Buy Me A Coffee" height= "60px" width= "217px" ></a>
+```
+Folder PATH listing for volume Windows
+Volume serial number is EC00-9DF2
+C:.
+|   .gitignore
+|   folder_structure.txt
+|   package-lock.json
+|   package.json
+|   README.md
+|   
++---images
+|       desktopversion.png
+|       
++---public
+|       favicon.png
+|       favicon11.png
+|       favicon1122.png
+|       index.html
+|       manifest.json
+|       robots.txt
+|       
+\---src
+    |   App.css
+    |   App.js
+    |   App.test.js
+    |   index.css
+    |   index.js
+    |   reportWebVitals.js
+    |   setupTests.js
+    |   style.css
+    |   
+    +---Assets
+    |   |   about.png
+    |   |   Ashish_Raj_Resume.pdf
+    |   |   avatar.svg
+    |   |   home-bg.jpg
+    |   |   home-main.svg
+    |   |   logo.png
+    |   |   pre.svg
+    |   |   Soumyajit_Behera-BIT_MESRA.pdf
+    |   |   
+    |   \---Projects
+    |           blog.png
+    |           firedetection.png
+    |           job-portal.png
+    |           onlinebanking.png
+    |           taskmanager.png
+    |           TextSummarizer.png
+    |           
+    \---components
+        |   Footer.js
+        |   Navbar.js
+        |   Particle.js
+        |   Pre.js
+        |   ScrollToTop.js
+        |   
+        +---About
+        |       About.js
+        |       AboutCard.js
+        |       Github.js
+        |       Techstack.js
+        |       Toolstack.js
+        |       
+        +---Home
+        |       Home.js
+        |       Home2.js
+        |       Type.js
+        |       
+        +---Projects
+        |       ProjectCards.js
+        |       Projects.js
+        |       
+        \---Resume
+                ResumeNew.js
+                
+
+```
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](../../issues).
+
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+<div align="center">
+  Made with ❤️ by [Your Name]
+  <br>
+  <a href="your-portfolio-url">Live Demo</a> • 
+  <a href="mailto:your-email">Contact</a> • 
+  <a href="your-linkedin">LinkedIn</a>
+</div>
