@@ -1,8 +1,9 @@
 # 🚀 Personal Portfolio Website
 
 <div align="center">
-  <img src="C:\Users\ashis\Portfolio\images\desktopversion.png" alt="Portfolio Preview" width="800px" />
+  <img src="https://raw.githubusercontent.com/ADubey7/portfolio/main/images/desktopversion.png" />
 </div>
+
 
 <div align="center">
   
