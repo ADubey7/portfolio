@@ -1,0 +1,74 @@
+Folder PATH listing for volume Windows
+Volume serial number is EC00-9DF2
+C:.
+|   .gitignore
+|   folder_structure.txt
+|   package-lock.json
+|   package.json
+|   README.md
+|   
++---images
+|       desktopversion.png
+|       
++---public
+|       favicon.png
+|       favicon11.png
+|       favicon1122.png
+|       index.html
+|       manifest.json
+|       robots.txt
+|       
+\---src
+    |   App.css
+    |   App.js
+    |   App.test.js
+    |   index.css
+    |   index.js
+    |   reportWebVitals.js
+    |   setupTests.js
+    |   style.css
+    |   
+    +---Assets
+    |   |   about.png
+    |   |   Ashish_Raj_Resume.pdf
+    |   |   avatar.svg
+    |   |   home-bg.jpg
+    |   |   home-main.svg
+    |   |   logo.png
+    |   |   pre.svg
+    |   |  
+    |   |   
+    |   \---Projects
+    |           blog.png
+    |           firedetection.png
+    |           job-portal.png
+    |           onlinebanking.png
+    |           taskmanager.png
+    |           TextSummarizer.png
+    |           
+    \---components
+        |   Footer.js
+        |   Navbar.js
+        |   Particle.js
+        |   Pre.js
+        |   ScrollToTop.js
+        |   
+        +---About
+        |       About.js
+        |       AboutCard.js
+        |       Github.js
+        |       Techstack.js
+        |       Toolstack.js
+        |       
+        +---Home
+        |       Home.js
+        |       Home2.js
+        |       Type.js
+        |       
+        +---Projects
+        |       ProjectCards.js
+        |       Projects.js
+        |       
+        \---Resume
+                ResumeNew.js
+                
