@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
+import myImg from "../../Assets/avatar.jpg";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
@@ -8,17 +8,28 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Home2() {
+  useEffect(() => {
+    AOS.init({ duration: 1200, once: true });
+  }, []);
+
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
         <Row>
-          <Col md={8} className="home-about-description">
+          {/* 🔹 Text Section */}
+          <Col
+            md={8}
+            className="home-about-description"
+            data-aos="fade-right"
+          >
             <h1 style={{ fontSize: "2.6em" }}>
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
-            <p className="home-about-body">
+            <p className="home-about-body" data-aos="fade-up" data-aos-delay="200">
               I fell in love with programming and I have at least learnt
               something, I think… 🤷‍♂️
               <br />
@@ -61,50 +72,59 @@ function Home2() {
               into real-world applications.
             </p>
           </Col>
-          <Col md={4} className="myAvtar">
+
+          {/* 🔹 Avatar Image */}
+          <Col md={4} className="myAvtar" data-aos="zoom-in">
             <Tilt>
               <img src={myImg} className="img-fluid" alt="avatar" />
             </Tilt>
           </Col>
         </Row>
+
+        {/* 🔹 Social Links */}
         <Row>
-          <Col md={12} className="home-about-social">
+          <Col
+            md={12}
+            className="home-about-social"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
             <h1>FIND ME ON</h1>
             <p>
               Feel free to <span className="purple">connect </span>with me
             </p>
             <ul className="home-about-social-links">
-              <li className="social-icons">
+              <li className="social-icons" data-aos="zoom-in" data-aos-delay="400">
                 <a
                   href="https://github.com/ADubey7"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
                 >
                   <AiFillGithub />
                 </a>
               </li>
-              <li className="social-icons">
+              <li className="social-icons" data-aos="zoom-in" data-aos-delay="500">
                 <a
                   href="https://x.com/AshishDubeyARA"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
                 >
                   <AiOutlineTwitter />
                 </a>
               </li>
-              <li className="social-icons">
+              <li className="social-icons" data-aos="zoom-in" data-aos-delay="600">
                 <a
                   href="https://www.linkedin.com/in/dubey-ashish2024/"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
                 >
                   <FaLinkedinIn />
                 </a>
               </li>
-              <li className="social-icons">
+              <li className="social-icons" data-aos="zoom-in" data-aos-delay="700">
                 <a
                   href="https://www.instagram.com/ashishdubey.7/"
                   target="_blank"

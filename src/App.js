@@ -4,46 +4,109 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
-import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  Navigate
-} from "react-router-dom";
-import ScrollToTop from "./components/ScrollToTop";
+import ContactForm from "./components/Contactform/ContactForm"; // 👈 Import ContactForm
+import Footer from "./components/Footer";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
-  const [load, upadateLoad] = useState(true);
+  const [load, setLoad] = useState(true);
 
+  // 🔹 Preloader
   useEffect(() => {
-    const timer = setTimeout(() => {
-      upadateLoad(false);
-    }, 1200);
-
+    const timer = setTimeout(() => setLoad(false), 1200);
     return () => clearTimeout(timer);
   }, []);
 
+  // 🔹 Initialize AOS
+  useEffect(() => {
+    AOS.init({
+      duration: 1200, // Smoother animation
+      easing: "ease-out-quart", // Premium easing
+      offset: 100, // Trigger slightly before element enters
+      once: false, // Animate every scroll
+      mirror: true, // Animate back when scrolling up
+    });
+
+    const onLoad = () => AOS.refresh();
+    window.addEventListener("load", onLoad);
+    return () => window.removeEventListener("load", onLoad);
+  }, []);
+
+  // 🔹 Smooth scrolling
+  useEffect(() => {
+    const handleAnchorClick = (e) => {
+      if (
+        e.target.tagName === "A" &&
+        e.target.getAttribute("href")?.startsWith("#")
+      ) {
+        e.preventDefault();
+        const targetId = e.target.getAttribute("href").substring(1);
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }
+    };
+
+    document.addEventListener("click", handleAnchorClick);
+    return () => document.removeEventListener("click", handleAnchorClick);
+  }, []);
+
   return (
-    <Router>
+    <>
       <Preloader load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <Navbar />
-        <ScrollToTop />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/project" element={<Projects />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/resume" element={<Resume />} />
-          <Route path="*" element={<Navigate to="/"/>} />
-        </Routes>
+
+        {/* 🔹 Sections with improved AOS animations */}
+        <section id="home" data-aos="fade-zoom-in" data-aos-delay="100">
+          <Home />
+        </section>
+
+        <section id="about" data-aos="fade-up-right" data-aos-delay="200">
+          <About />
+        </section>
+
+        <section
+          id="projects"
+          data-aos="fade-zoom-in"
+          data-aos-delay="300"
+          data-aos-once="true"
+        >
+          <Projects />
+        </section>
+
+        <section
+          id="resume"
+          data-aos="fade-up" // smooth upward fade
+          data-aos-duration="1200" // animation duration
+          data-aos-delay="100" // slight delay before triggering
+          data-aos-once="true" // animate only once
+          data-aos-anchor-placement="top-bottom" // triggers when top hits bottom of viewport
+        >
+          <Resume />
+        </section>
+
+        {/* 🔹 Contact Section */}
+        <section
+          id="contact"
+          data-aos="fade-up" // smooth fade-up for contact
+          data-aos-duration="1200"
+          data-aos-delay="200"
+          data-aos-once="true"
+          data-aos-anchor-placement="top-bottom"
+        >
+          <ContactForm />
+        </section>
+
         <Footer />
       </div>
-    </Router>
+    </>
   );
 }
 
