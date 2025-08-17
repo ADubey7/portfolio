@@ -10,7 +10,7 @@ import emailjs from '@emailjs/browser';
 
 function ContactForm() {
   useEffect(() => {
-    AOS.init({ duration: 1000, once: true });
+    AOS.init({ duration: 1200, once: true });
   }, []);
 
   // EmailJS submission handler

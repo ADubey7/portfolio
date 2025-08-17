@@ -97,7 +97,7 @@ function App() {
           id="contact"
           data-aos="fade-up" // smooth fade-up for contact
           data-aos-duration="1200"
-          data-aos-delay="200"
+          data-aos-delay="100"
           data-aos-once="true"
           data-aos-anchor-placement="top-bottom"
         >
