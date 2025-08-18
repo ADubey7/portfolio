@@ -10,66 +10,70 @@ import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 function ResumeNew() {
-  const [width, setWidth] = useState(1200);
+  const [width, setWidth] = useState(window.innerWidth);
 
   useEffect(() => {
-    setWidth(window.innerWidth);
+    const handleResize = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   return (
-    <div>
-      <Container
-        fluid
-        className="resume-section"
-        data-aos="fade-zoom-in"      // 👈 interesting zoom + fade animation
+    <Container fluid className="resume-section">
+      <Particle />
+      <Row
+        style={{ justifyContent: "center", position: "relative" }}
+        data-aos="fade-up"
         data-aos-delay="200"
-        data-aos-duration="1200"
-        data-aos-once="true"
+        data-aos-duration="1000"
       >
-        <Particle />
-
-        <Row
-          style={{ justifyContent: "center", position: "relative" }}
-          data-aos="fade-up"
-          data-aos-delay="300"      // stagger button animation
+        <Button
+          variant="primary"
+          href={pdf}
+          target="_blank"
+          style={{ maxWidth: "250px" }}
         >
-          <Button
-            variant="primary"
-            href={pdf}
-            target="_blank"
-            style={{ maxWidth: "250px" }}
-          >
-            <AiOutlineDownload /> &nbsp;Download CV
-          </Button>
-        </Row>
+          <AiOutlineDownload />
+          &nbsp;Download CV
+        </Button>
+      </Row>
 
-        <Row
-          className="resume"
-          data-aos="zoom-in"          // zoom effect for PDF
-          data-aos-delay="400"
-          data-aos-duration="1000"
-        >
+      <Row
+        className="resume"
+        data-aos="zoom-in"
+        data-aos-delay="400"
+        data-aos-duration="1000"
+        style={{ overflowX: "hidden" }}
+      >
+        <div style={{ maxWidth: "100%", overflowX: "hidden" }}>
           <Document file={pdf} className="d-flex justify-content-center">
-            <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
+            <Page 
+              pageNumber={1} 
+              scale={width > 786 ? 1.2 : 0.6} 
+              renderTextLayer={false} 
+              renderAnnotationLayer={false} 
+            />
           </Document>
-        </Row>
+        </div>
+      </Row>
 
-        <Row
-          style={{ justifyContent: "center", position: "relative" }}
-          data-aos="fade-up"
-          data-aos-delay="500"      // stagger second button
+      <Row
+        style={{ justifyContent: "center", position: "relative" }}
+        data-aos="fade-up"
+        data-aos-delay="600"
+        data-aos-duration="1000"
+      >
+        <Button
+          variant="primary"
+          href={pdf}
+          target="_blank"
+          style={{ maxWidth: "250px" }}
         >
-          <Button
-            variant="primary"
-            href={pdf}
-            target="_blank"
-            style={{ maxWidth: "250px" }}
-          >
-            <AiOutlineDownload /> &nbsp;Download CV
-          </Button>
-        </Row>
-      </Container>
-    </div>
+          <AiOutlineDownload />
+          &nbsp;Download CV
+        </Button>
+      </Row>
+    </Container>
   );
 }
 
