@@ -8,29 +8,36 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Ashish Raj </span>
-            from <span className="purple"> Ara, India.</span>
+            Hi Everyone! 👋 I’m <span className="purple">Ashish Raj</span> from{" "}
+            <span className="purple">Ara, India.</span>
             <br />
-            I am currently pursuing my Master's in Computer Applications (MCA)
-            from NMIT, Bangalore.
+            Currently, I’m pursuing my Master’s in Computer Applications (MCA)
+            from <span className="purple">NMIT, Bangalore.</span>
+            <br />I hold a Bachelor’s degree in Computer Applications (BCA) from{" "}
+            <span className="purple">CIMAGE, Patna.</span>
             <br />
-            I have completed my Bachelor's in Computer Applications (BCA) from
-            CIMAGE, Patna.
+            <br />
+            Apart from coding, here are a few things I love doing:
+            <br />
+            🎮 Playing Games
+            <br />
+            ✈️ Travelling
             <br />
             <br />
-            Apart from coding, some other activities that I love to do!
+            
           </p>
-          <ul>
-            <li className="about-activity">
-              <ImPointRight /> Playing Games
-            </li>
-            {/* <li className="about-activity">
-              <ImPointRight /> Writing Tech Blogs
-            </li> */}
-            <li className="about-activity">
-              <ImPointRight /> Travelling
-            </li>
-          </ul>
+
+          {/* 
+<ul>
+  <li className="about-activity">
+    <ImPointRight /> Playing Games
+  </li>
+  <li className="about-activity">
+    <ImPointRight /> Travelling
+  </li>
+</ul>
+*/}
+
 
           <p style={{ color: "rgb(155 126 172)" }}>
             "Building the future—one line of code at a time."{" "}

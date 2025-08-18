@@ -30,47 +30,49 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body" data-aos="fade-up" data-aos-delay="200">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
-              <br />
-              <br />I am fluent in classics like
-              <i>
-                <b className="purple"> Java, JavaScript, C, Python. </b>
-              </i>
-              <br />
-              <br />
-              My field of interest is in building&nbsp;
-              <i>
-                <b className="purple">Full Stack (MERN) Web Applications</b> and
-                products.
-              </i>
-              <br />
-              <br />
-              I’m also passionate about&nbsp;
-              <i>
-                <b className="purple">Data Science</b>
-              </i>
-              &nbsp;and love solving problems using&nbsp;
-              <i>
-                <b className="purple">Machine Learning</b>
-              </i>
-              &nbsp;and&nbsp;
-              <i>
-                <b className="purple">Data Structures & Algorithms (DSA)</b>.
-              </i>
-              <br />
-              <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Java</b> and
-              <i>
-                <b className="purple"> Spring Boot Framework</b>
-              </i>
-              &nbsp;as well as integrating
-              <i>
-                <b className="purple"> Machine Learning models </b>
-              </i>
-              into real-world applications.
-            </p>
+  I fell in love with programming early on, and since then I’ve been constantly learning and building. 🤷‍♂️
+  <br />
+  <br />I am fluent in programming languages like
+  <i>
+    <b className="purple"> Java, JavaScript, C, and Python. </b>
+  </i>
+  <br />
+  <br />
+  My primary interest lies in developing&nbsp;
+  <i>
+    <b className="purple">Full Stack (MERN) Web Applications</b> and products.
+  </i>
+  <br />
+  <br />
+  I am also passionate about&nbsp;
+  <i>
+    <b className="purple">Data Science </b>
+  </i>
+  and enjoy solving complex problems using&nbsp;
+  <i>
+    <b className="purple">Machine Learning </b>
+  </i>
+  and&nbsp;
+  <i>
+    <b className="purple">Data Structures & Algorithms (DSA).</b>
+  </i>
+  <br />
+  <br />
+  Whenever possible, I love combining my knowledge of&nbsp;
+  <i>
+    <b className="purple">Java </b>
+  </i>
+  and
+  <i>
+    <b className="purple"> Spring Boot Framework </b>
+  </i>
+  with&nbsp;
+  <i>
+    <b className="purple">Machine Learning </b>
+  </i>
+  to build real-world applications.
+</p>
+
           </Col>
 
           {/* 🔹 Avatar Image */}
