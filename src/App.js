@@ -63,8 +63,8 @@ function App() {
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <Navbar />
 
-        {/* 🔹 Sections with improved AOS animations */}
-        <section id="home" data-aos="fade-zoom-in" data-aos-delay="100">
+        {/* 🔹 Sections with same AOS animation as About */}
+        <section id="home" data-aos="fade-up-right" data-aos-delay="200">
           <Home />
         </section>
 
@@ -72,34 +72,17 @@ function App() {
           <About />
         </section>
 
-        <section
-          id="projects"
-          data-aos="fade-zoom-in"
-          data-aos-delay="300"
-          data-aos-once="true"
-        >
+        <section id="projects" data-aos="fade-up-right" data-aos-delay="200">
           <Projects />
         </section>
 
-        <section
-          id="resume"
-          data-aos="fade-up" // smooth upward fade
-          data-aos-duration="1200" // animation duration
-          data-aos-delay="100" // slight delay before triggering
-          data-aos-once="true" // animate only once
-          data-aos-anchor-placement="top-bottom" // triggers when top hits bottom of viewport
-        >
+        <section id="resume" data-aos="fade-up-right" data-aos-delay="200">
           <Resume />
         </section>
 
-        {/* 🔹 Contact Section */}
-        <section
-  id="contact"
-  data-aos="fade-up-right"   // 🔹 same as About
-  data-aos-delay="200"
->
-  <ContactForm />
-</section>
+        <section id="contact" data-aos="fade-up-right" data-aos-delay="200">
+          <ContactForm />
+        </section>
 
         <Footer />
       </div>

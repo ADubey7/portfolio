@@ -1,58 +1,71 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import Particle from "../Particle"; // Particle background
 import "./ContactForm.css";
 import { AiOutlinePhone, AiOutlineMail } from "react-icons/ai";
 import { GoLocation } from "react-icons/go";
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
 
 function ContactForm() {
-  useEffect(() => {
-    AOS.init({ duration: 1200, once: true });
-  }, []);
-
   // EmailJS submission handler
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm(
-      "service_ktzcxvq",    // replace with your Service ID
-      "template_9bgxcag",   // replace with your Template ID
-      e.target,
-      "3ykZM2msA1s8CBvoZ"     // replace with your Public Key
-    )
-      .then((result) => {
-        console.log(result.text);
-        alert("Message sent successfully!");
-        e.target.reset();
-      }, (error) => {
-        console.log(error.text);
-        alert("Failed to send the message. Please try again.");
-      });
+    emailjs
+      .sendForm(
+        "service_ktzcxvq", // ✅ Replace with your Service ID
+        "template_9bgxcag", // ✅ Replace with your Template ID
+        e.target,
+        "3ykZM2msA1s8CBvoZ" // ✅ Replace with your Public Key
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert("Message sent successfully!");
+          e.target.reset();
+        },
+        (error) => {
+          console.log(error.text);
+          alert("Failed to send the message. Please try again.");
+        }
+      );
   };
 
   return (
     <Container fluid className="contact-form-section">
       <Particle />
 
-      <Row className="justify-content-center" style={{ position: "relative", zIndex: 1 }}>
+      <Row
+        className="justify-content-center"
+        style={{ position: "relative", zIndex: 1 }}
+      >
         <Col md={10}>
           <h2 className="contact-heading" data-aos="fade-down">
             Contact Me
           </h2>
-          <p className="contact-subheading" data-aos="fade-down" data-aos-delay="100">
-            Feel free to reach out if you have any questions or would like to work together. I'm always open
-            to discussing new projects and opportunities.
+          <p
+            className="contact-subheading"
+            data-aos="fade-down"
+            data-aos-delay="100"
+          >
+            Feel free to reach out if you have any questions or would like to
+            work together. I'm always open to discussing new projects and
+            opportunities.
           </p>
 
           <Row>
             {/* Left Column: Contact Details */}
-            <Col md={4} className="contact-details" data-aos="fade-right" data-aos-delay="200">
+            <Col
+              md={4}
+              className="contact-details"
+              data-aos="fade-right"
+              data-aos-delay="200"
+            >
               <h4>Get In Touch</h4>
               <p>
-                If you have any questions or would like to collaborate, feel free to reach out via any of the following methods or by using the contact form.
+                If you have any questions or would like to collaborate, feel
+                free to reach out via any of the following methods or by using
+                the contact form.
               </p>
               <p>
                 <AiOutlinePhone style={{ marginRight: "8px" }} />
@@ -73,12 +86,22 @@ function ContactForm() {
               <Form onSubmit={sendEmail}>
                 <Form.Group controlId="formName" className="mb-3">
                   <Form.Label>Your Name</Form.Label>
-                  <Form.Control type="text" name="user_name" placeholder="What's your name?" required />
+                  <Form.Control
+                    type="text"
+                    name="user_name"
+                    placeholder="What's your name?"
+                    required
+                  />
                 </Form.Group>
 
                 <Form.Group controlId="formEmail" className="mb-3">
                   <Form.Label>Your Email</Form.Label>
-                  <Form.Control type="email" name="user_email" placeholder="What's your email?" required />
+                  <Form.Control
+                    type="email"
+                    name="user_email"
+                    placeholder="What's your email?"
+                    required
+                  />
                 </Form.Group>
 
                 <Form.Group controlId="formMessage" className="mb-3">
