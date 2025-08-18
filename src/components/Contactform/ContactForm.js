@@ -1,28 +1,35 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
-import Particle from "../Particle"; // Particle background
+import Particle from "../Particle";
 import "./ContactForm.css";
 import { AiOutlinePhone, AiOutlineMail } from "react-icons/ai";
 import { GoLocation } from "react-icons/go";
 import emailjs from "@emailjs/browser";
+import AOS from "aos";
 
 function ContactForm() {
-  // EmailJS submission handler
+  // 🔹 Ensure AOS recalculates when component mounts
+  useEffect(() => {
+    setTimeout(() => {
+      AOS.refresh();
+    }, 500); // wait a bit for DOM (Particle, form fields) to load
+  }, []);
+
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs
       .sendForm(
-        "service_ktzcxvq", // ✅ Replace with your Service ID
-        "template_9bgxcag", // ✅ Replace with your Template ID
+        "service_ktzcxvq",
+        "template_9bgxcag",
         e.target,
-        "3ykZM2msA1s8CBvoZ" // ✅ Replace with your Public Key
+        "3ykZM2msA1s8CBvoZ"
       )
       .then(
         (result) => {
           console.log(result.text);
           alert("Message sent successfully!");
           e.target.reset();
+          AOS.refresh(); // 🔹 refresh after reset
         },
         (error) => {
           console.log(error.text);
@@ -35,10 +42,7 @@ function ContactForm() {
     <Container fluid className="contact-form-section">
       <Particle />
 
-      <Row
-        className="justify-content-center"
-        style={{ position: "relative", zIndex: 1 }}
-      >
+      <Row className="justify-content-center" style={{ position: "relative", zIndex: 1 }}>
         <Col md={10}>
           <h2 className="contact-heading" data-aos="fade-down">
             Contact Me
@@ -54,7 +58,7 @@ function ContactForm() {
           </p>
 
           <Row>
-            {/* Left Column: Contact Details */}
+            {/* Left Column */}
             <Col
               md={4}
               className="contact-details"
