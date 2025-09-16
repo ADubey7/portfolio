@@ -5,6 +5,7 @@ import Container from "react-bootstrap/Container";
 import logo from "../Assets/logo.png";
 import Button from "react-bootstrap/Button";
 import { CgGitFork } from "react-icons/cg";
+//import ThemeToggle from "./ThemeToggle"; // Import the theme toggle
 
 import {
   AiFillStar,
@@ -14,6 +15,7 @@ import {
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
+import { HiOutlineAcademicCap } from "react-icons/hi"; // Certificate icon
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -65,6 +67,12 @@ function NavBar() {
             </Nav.Item>
 
             <Nav.Item>
+              <Nav.Link href="#certificates" onClick={() => updateExpanded(false)}>
+                <HiOutlineAcademicCap style={{ marginBottom: "2px" }} /> Certificates
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
               <Nav.Link href="#projects" onClick={() => updateExpanded(false)}>
                 <AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }} />{" "}
                 Projects
@@ -87,7 +95,14 @@ function NavBar() {
                 <AiFillStar style={{ fontSize: "1.1em" }} />
               </Button>
             </Nav.Item>
-          </Nav>
+
+            {/* Add the theme toggle button */}
+            {/*
+            <Nav.Item className="theme-toggle-nav-item">
+              <ThemeToggle />
+            </Nav.Item>
+            */}
+          </Nav>  
         </Navbar.Collapse>
       </Container>
     </Navbar>

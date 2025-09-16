@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+//import { ThemeProvider } from "./contexts/ThemeContext";
 import Preloader from "../src/components/Pre";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home/Home";
@@ -7,7 +8,8 @@ import Projects from "./components/Projects/Projects";
 import Resume from "./components/Resume/ResumeNew";
 import ContactForm from "./components/Contactform/ContactForm";
 import Footer from "./components/Footer";
-import Section from "./components/Section"; // 👈 new wrapper
+import Section from "./components/Section";
+import Certificates from "./components/Certificates/Certificates";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -22,17 +24,40 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
+  // Initialize AOS only once when app loads
   useEffect(() => {
     AOS.init({
-      duration: 1200,
-      easing: "ease-out-quart",
-      offset: 100,
+      duration: 1000,
+      easing: "ease-out-cubic",
+      offset: 50,
       once: false,
       mirror: true,
+      anchorPlacement: "top-bottom",
+      disable: "mobile",
     });
-    const onLoad = () => AOS.refresh();
-    window.addEventListener("load", onLoad);
-    return () => window.removeEventListener("load", onLoad);
+
+    const handleLoad = () => {
+      setTimeout(() => {
+        AOS.refresh();
+      }, 100);
+    };
+
+    let scrollTimeout;
+    const handleScroll = () => {
+      clearTimeout(scrollTimeout);
+      scrollTimeout = setTimeout(() => {
+        AOS.refresh();
+      }, 100);
+    };
+
+    window.addEventListener("load", handleLoad);
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener("load", handleLoad);
+      window.removeEventListener("scroll", handleScroll);
+      clearTimeout(scrollTimeout);
+    };
   }, []);
 
   return (
@@ -49,6 +74,10 @@ function App() {
           <About />
         </Section>
 
+        <Section id="certificates" disableAOS={true}>
+          <Certificates />
+        </Section>
+
         <Section id="projects">
           <Projects />
         </Section>
@@ -57,7 +86,7 @@ function App() {
           <Resume />
         </Section>
 
-        <Section id="contact">
+        <Section id="contact" disableAOS={true}>
           <ContactForm />
         </Section>
 

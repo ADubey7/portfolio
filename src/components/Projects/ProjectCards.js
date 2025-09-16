@@ -1,20 +1,17 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 function ProjectCards(props) {
-  useEffect(() => {
-    AOS.init({ duration: 1000, once: true }); // animation duration
-  }, []);
-
   return (
     <Card
       className="project-card-view"
-      data-aos="fade-up"   // 👈 animation type
+      data-aos="fade-up"
+      data-aos-duration="800"
+      data-aos-delay={300 + (props.index * 100)} // Staggered animation based on index
+      data-aos-once="false" // Allow animation on every scroll
     >
       <Card.Img variant="top" src={props.imgPath} alt="card-img" />
       <Card.Body>
@@ -43,4 +40,5 @@ function ProjectCards(props) {
     </Card>
   );
 }
+
 export default ProjectCards;

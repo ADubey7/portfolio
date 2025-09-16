@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import Particle from "../Particle";
 import "./ContactForm.css";
@@ -8,15 +8,21 @@ import emailjs from "@emailjs/browser";
 import AOS from "aos";
 
 function ContactForm() {
-  // 🔹 Ensure AOS recalculates when component mounts
+  const formRef = useRef();
+
+  // Initialize AOS when component mounts
   useEffect(() => {
-    setTimeout(() => {
+    // Small delay to ensure DOM is ready
+    const timer = setTimeout(() => {
       AOS.refresh();
-    }, 500); // wait a bit for DOM (Particle, form fields) to load
+    }, 100);
+
+    return () => clearTimeout(timer);
   }, []);
 
   const sendEmail = (e) => {
     e.preventDefault();
+    
     emailjs
       .sendForm(
         "service_ktzcxvq",
@@ -29,7 +35,10 @@ function ContactForm() {
           console.log(result.text);
           alert("Message sent successfully!");
           e.target.reset();
-          AOS.refresh(); // 🔹 refresh after reset
+          // Refresh AOS after a brief delay to re-trigger animations
+          setTimeout(() => {
+            AOS.refresh();
+          }, 300);
         },
         (error) => {
           console.log(error.text);
@@ -44,13 +53,20 @@ function ContactForm() {
 
       <Row className="justify-content-center" style={{ position: "relative", zIndex: 1 }}>
         <Col md={10}>
-          <h2 className="contact-heading" data-aos="fade-down">
+          <h2 
+            className="contact-heading" 
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            data-aos-once="false"
+          >
             Contact Me
           </h2>
           <p
             className="contact-subheading"
             data-aos="fade-down"
-            data-aos-delay="100"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+            data-aos-once="false"
           >
             Feel free to reach out if you have any questions or would like to
             work together. I'm always open to discussing new projects and
@@ -63,7 +79,9 @@ function ContactForm() {
               md={4}
               className="contact-details"
               data-aos="fade-right"
-              data-aos-delay="200"
+              data-aos-delay="300"
+              data-aos-duration="1000"
+              data-aos-once="false"
             >
               <h4>Get In Touch</h4>
               <p>
@@ -86,8 +104,14 @@ function ContactForm() {
             </Col>
 
             {/* Right Column: Form */}
-            <Col md={8} data-aos="fade-left" data-aos-delay="300">
-              <Form onSubmit={sendEmail}>
+            <Col 
+              md={8} 
+              data-aos="fade-left" 
+              data-aos-delay="400"
+              data-aos-duration="1000"
+              data-aos-once="false"
+            >
+              <Form ref={formRef} onSubmit={sendEmail}>
                 <Form.Group controlId="formName" className="mb-3">
                   <Form.Label>Your Name</Form.Label>
                   <Form.Control
@@ -123,7 +147,9 @@ function ContactForm() {
                   type="submit"
                   className="contact-submit-btn"
                   data-aos="zoom-in"
-                  data-aos-delay="400"
+                  data-aos-delay="500"
+                  data-aos-duration="800"
+                  data-aos-once="false"
                 >
                   Send Message
                 </Button>

@@ -751,3 +751,181 @@ button:focus {
 .fork-btn-inner::after {
   display: none !important;
 }
+
+/*
+Add these CSS variables and styles to your existing style.css
+
+Light mode color variables
+:root[data-theme="light"] {
+  --section-background-color: linear-gradient(
+    to bottom left,
+    rgba(240, 240, 240, 0.9),
+    rgba(255, 255, 255, 0.95)
+  );
+
+  --image-gradient: linear-gradient(
+    to bottom left,
+    rgba(240, 240, 240, 0.8),
+    rgba(255, 255, 255, 0.9)
+  );
+
+  --imp-text-color: #6b46c1;
+  --text-color: #1f2937;
+  --background-color: #ffffff;
+  --card-background: #f9fafb;
+  --navbar-bg: rgba(255, 255, 255, 0.9);
+  --footer-bg: #f3f4f6;
+  --border-color: rgba(107, 70, 193, 0.3);
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+Dark mode color variables (your existing colors)
+:root[data-theme="dark"] {
+  --section-background-color: linear-gradient(
+    to bottom left,
+    rgba(17, 16, 16, 0.582),
+    rgba(12, 8, 24, 0.904)
+  );
+
+  --image-gradient: linear-gradient(
+    to bottom left,
+    rgba(17, 16, 16, 0.678),
+    rgba(12, 10, 22, 0.863)
+  );
+
+  --imp-text-color: #c770f0;
+  --text-color: #ffffff;
+  --background-color: #0c0513;
+  --card-background: rgba(255, 255, 255, 0.1);
+  --navbar-bg: rgba(27, 26, 46, 0.66);
+  --footer-bg: rgb(10, 4, 22);
+  --border-color: rgba(200, 137, 230, 0.637);
+  --shadow-color: rgba(119, 53, 136, 0.459);
+}
+
+Theme Toggle Button Styles
+.theme-toggle-btn {
+  background: var(--card-background);
+  border: 2px solid var(--border-color);
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: var(--imp-text-color);
+  margin-left: 10px;
+}
+
+.theme-toggle-btn:hover {
+  background: var(--imp-text-color);
+  color: var(--background-color);
+  transform: scale(1.1);
+  box-shadow: 0 0 15px var(--imp-text-color);
+}
+
+.theme-toggle-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(199, 112, 240, 0.3);
+}
+
+.theme-icon {
+  transition: all 0.3s ease;
+}
+
+.theme-toggle-nav-item {
+  display: flex;
+  align-items: center;
+}
+
+Update existing styles to use CSS variables
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+Update navbar for light mode
+:root[data-theme="light"] .sticky {
+  background-color: var(--navbar-bg) !important;
+  box-shadow: 0px 10px 10px 0px var(--shadow-color) !important;
+}
+
+:root[data-theme="light"] .navbar {
+  background-color: var(--navbar-bg) !important;
+}
+
+Update text colors for light mode
+:root[data-theme="light"] .navbar-nav .nav-link {
+  color: var(--text-color) !important;
+}
+
+:root[data-theme="light"] .navbar-brand {
+  color: var(--text-color) !important;
+}
+
+Update home section for light mode
+:root[data-theme="light"] .home-section {
+  background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
+  color: var(--text-color);
+}
+
+:root[data-theme="light"] .home-content {
+  color: var(--text-color);
+}
+
+Update project and about sections for light mode
+:root[data-theme="light"] .project-section,
+:root[data-theme="light"] .about-section,
+:root[data-theme="light"] .resume-section {
+  background-image: var(--section-background-color) !important;
+  color: var(--text-color) !important;
+}
+
+Update cards for light mode
+:root[data-theme="light"] .project-card-view,
+:root[data-theme="light"] .blog-card-view {
+  background-color: var(--card-background) !important;
+  color: var(--text-color) !important;
+  box-shadow: 0 4px 5px 3px var(--shadow-color) !important;
+}
+
+Update footer for light mode
+:root[data-theme="light"] .footer {
+  background-color: var(--footer-bg);
+  color: var(--text-color) !important;
+}
+
+:root[data-theme="light"] .footer h3 {
+  color: var(--text-color) !important;
+}
+
+Update scrollbar for light mode
+:root[data-theme="light"] ::-webkit-scrollbar-track {
+  background: #e5e7eb;
+}
+
+:root[data-theme="light"] ::-webkit-scrollbar-thumb {
+  background: rgba(107, 70, 193, 0.6);
+}
+
+:root[data-theme="light"] ::-webkit-scrollbar-thumb:hover {
+  background: rgba(107, 70, 193, 0.8);
+}
+
+Responsive adjustments
+@media (max-width: 767px) {
+  .theme-toggle-btn {
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+  }
+  
+  .theme-toggle-nav-item {
+    margin-top: 10px;
+  }
+}
+*/
+
