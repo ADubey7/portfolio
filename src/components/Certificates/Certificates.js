@@ -50,7 +50,7 @@ const Certificates = () => {
       description: "Learned Agile methodologies, Scrum framework and effective team collaboration practices",
       image: "/certi/Agile Scrum Master_page-0001.jpg",
       tags: ["Agile", "Scrum", "Project Management", "Team Collaboration"],
-      link: "https://link-to-your-certificate.com",
+      link: "https://github.com/ADubey7/portfolio/blob/main/public/certi/Agile%20Scrum%20Master_page-0001.jpg",
     },
     {
       title: "C# - Comprehensive",
