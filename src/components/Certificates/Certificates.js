@@ -10,7 +10,7 @@ const Certificates = () => {
       description: "Mastered full-stack development using Java, Spring Boot, SQL and web development technologies",
       image: "/certi/Full Stack Java Development_page-0001.webp",
       tags: ["Java", "Spring Boot", "SQL", "Web Development"],
-      link: "https://raw.githubusercontent.com/ADubey7/portfolio/main/cert/Full%20Stack%20Java%20Development_page-0001.jpg",
+      link: "https://raw.githubusercontent.com/ADubey7/portfolio/main/cert/Full%20Stack%20Java%20Development_page-0001.webp",
     },
     {
       title: "Full Stack Development Introduction", 
@@ -18,7 +18,7 @@ const Certificates = () => {
       description: "Gained foundational knowledge in HTML, CSS, JavaScript and modern web development practices",
       image: "/certi/Full Stack Development Introduction_page-0001.webp",
       tags: ["HTML", "CSS", "JavaScript", "Web Development Basics"],
-      link: "https://raw.githubusercontent.com/ADubey7/portfolio/main/cert/Full%20Stack%20Development%20Introduction_page-0001.jpg",
+      link: "https://raw.githubusercontent.com/ADubey7/portfolio/main/cert/Full%20Stack%20Development%20Introduction_page-0001.webp",
     },
     {
       title: "Fundamentals of DevOps on AWS",
@@ -26,7 +26,7 @@ const Certificates = () => {
       description: "Learned DevOps principles, AWS cloud services, CI/CD pipelines and deployment automation",
       image: "/certi/Fundamentals of DevOps On AWS_page-0001.webp",
       tags: ["DevOps", "AWS", "CI/CD", "Cloud Deployment", "Scripting"],
-      link: "https://raw.githubusercontent.com/ADubey7/portfolio/main/cert/Fundamentals%20of%20DevOps%20On%20AWS_page-0001.jpg",
+      link: "https://raw.githubusercontent.com/ADubey7/portfolio/main/cert/Fundamentals%20of%20DevOps%20On%20AWS_page-0001.webp",
     },
     {
       title: "Fundamentals of Information Security",
@@ -34,7 +34,7 @@ const Certificates = () => {
       description: "Gained foundational knowledge of data protection, risk management, and security principles",
       image: "/certi/Fundamentals of Information Security_page-0001.webp", 
       tags: ["Cybersecurity", "Information Security", "Network Security", "Data Protection"],
-      link: "https://raw.githubusercontent.com/ADubey7/portfolio/main/cert/Fundamentals%20of%20Information%20Security_page-0001.jpg",
+      link: "https://raw.githubusercontent.com/ADubey7/portfolio/main/cert/Fundamentals%20of%20Information%20Security_page-0001.webp",
     },
     {
       title: "Introduction to DevOps Tools",
@@ -42,7 +42,7 @@ const Certificates = () => {
       description: "Mastered essential DevOps tools including Git, Jenkins, Docker, and Kubernetes",
       image: "/certi/Introduction To DevOps Tools_page-0001.webp",
       tags: ["DevOps", "Git", "Jenkins", "Docker", "Kubernetes"],
-      link: "https://raw.githubusercontent.com/ADubey7/portfolio/main/cert/Introduction%20To%20DevOps%20Tools_page-0001.jpg",
+      link: "https://raw.githubusercontent.com/ADubey7/portfolio/main/cert/Introduction%20To%20DevOps%20Tools_page-0001.webp",
     },
     {
       title: "Agile Scrum Master",
@@ -50,7 +50,7 @@ const Certificates = () => {
       description: "Learned Agile methodologies, Scrum framework and effective team collaboration practices",
       image: "/certi/Agile Scrum Master_page-0001.webp",
       tags: ["Agile", "Scrum", "Project Management", "Team Collaboration"],
-      link: "https://raw.githubusercontent.com/ADubey7/portfolio/main/public/certi/Agile%20Scrum%20Master_page-0001.jpg",
+      link: "https://raw.githubusercontent.com/ADubey7/portfolio/main/public/certi/Agile%20Scrum%20Master_page-0001.webp",
     },
     {
       title: "C# - Comprehensive",
@@ -58,7 +58,7 @@ const Certificates = () => {
       description: "Comprehensive understanding of C# programming, .NET framework and object-oriented concepts",
       image: "/certi/CsharpComprehensive.webp",
       tags: ["C#", ".NET", "Object-Oriented Programming", "Windows Applications"],
-      link: "https://raw.githubusercontent.com/ADubey7/portfolio/main/cert/C%23%20-%20Comprehensive_page-0001.jpg",
+      link: "https://raw.githubusercontent.com/ADubey7/portfolio/main/cert/C%23%20-%20Comprehensive_page-0001.webp",
     },
     {
       title: "DSA in Java", 
@@ -66,7 +66,7 @@ const Certificates = () => {
       description: "Mastered data structures, algorithms and problem-solving techniques using Java",
       image: "/certi/DSA with java_page-0001.webp",
       tags: ["Data Structures", "Algorithms", "Problem Solving", "Competitive Programming"],
-      link: "https://raw.githubusercontent.com/ADubey7/portfolio/main/cert/DSA%20with%20java_page-0001.jpg",
+      link: "https://raw.githubusercontent.com/ADubey7/portfolio/main/cert/DSA%20with%20java_page-0001.webp",
     },
     {
       title: "Experiment 1 - Raspberry Pi based Weather Monitoring System",
@@ -74,7 +74,7 @@ const Certificates = () => {
       description: "Built IoT-based weather monitoring system using Raspberry Pi, sensors and Python programming",
       image: "/certi/RaspberryPiWeatherSystempage.webp",
       tags: ["IoT", "Raspberry Pi", "Sensors", "Weather Monitoring", "Python"],
-      link: "https://raw.githubusercontent.com/ADubey7/portfolio/main/cert/RaspberryPiWeatherSystempage.jpg",
+      link: "https://raw.githubusercontent.com/ADubey7/portfolio/main/cert/RaspberryPiWeatherSystempage.webp",
     },
   ];
 
