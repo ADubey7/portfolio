@@ -9,6 +9,7 @@ import taskManager from "../../Assets/Projects/taskmanager.png";
 import fireDetection from "../../Assets/Projects/firedetection.png";
 import textSummarizer from "../../Assets/Projects/TextSummarizer.png";
 import onlineBanking from "../../Assets/Projects/onlinebanking.png";
+import productDataExplorer from "../../Assets/Projects/productDataExplorer.png";
 
 function Projects() {
   return (
@@ -88,6 +89,18 @@ function Projects() {
               description="A Java-based application simulating key banking features including user registration, login, fund transfers, account management, and transaction history. Built with a focus on security, scalability, and clean design."
               ghLink="https://github.com/ADubey7/Online-Banking-System"
               index={4}
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={productDataExplorer}
+              isBlog={false}
+              title="Product Data Explorer"
+              description="A full-stack web application that scrapes and displays product data from World of Books. Built with Next.js, React, and Express.js, featuring real-time scraping, hierarchical navigation, search with pagination, responsive design, caching, error handling, and smooth loading states."
+              ghLink="https://github.com/ADubey7/product-data-explorer"
+              demoLink="https://product-data-explorer-psi.vercel.app/"
+              index={5}
             />
           </Col>
         </Row>

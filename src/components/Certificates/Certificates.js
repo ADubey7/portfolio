@@ -48,7 +48,7 @@ const Certificates = () => {
       title: "Agile Scrum Master",
       org: "Simplilearn", 
       description: "Learned Agile methodologies, Scrum framework and effective team collaboration practices",
-      image: "/certi/Agile Scrum Master_page-0001.webp",
+      image: "/certi/AgileScrumMaster.webp",
       tags: ["Agile", "Scrum", "Project Management", "Team Collaboration"],
       link: "https://raw.githubusercontent.com/ADubey7/portfolio/main/public/certi/Agile%20Scrum%20Master_page-0001.webp",
     },
