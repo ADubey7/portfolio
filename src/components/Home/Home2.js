@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.jpg";
+import myImg from "../../Assets/avatar.png";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
@@ -21,58 +21,58 @@ function Home2() {
       <Container>
         <Row>
           {/* 🔹 Text Section */}
-          <Col
-            md={8}
-            className="home-about-description"
-            data-aos="fade-right"
-          >
+          <Col md={8} className="home-about-description" data-aos="fade-right">
             <h1 style={{ fontSize: "2.6em" }}>
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
-            <p className="home-about-body" data-aos="fade-up" data-aos-delay="200">
-  I fell in love with programming early on, and since then I’ve been constantly learning and building. 🤷‍♂️
-  <br />
-  <br />I am fluent in programming languages like
-  <i>
-    <b className="purple"> Java, JavaScript, C, and Python. </b>
-  </i>
-  <br />
-  <br />
-  My primary interest lies in developing&nbsp;
-  <i>
-    <b className="purple">Full Stack (MERN) Web Applications</b> and products.
-  </i>
-  <br />
-  <br />
-  I am also passionate about&nbsp;
-  <i>
-    <b className="purple">Data Science </b>
-  </i>
-  and enjoy solving complex problems using&nbsp;
-  <i>
-    <b className="purple">Machine Learning </b>
-  </i>
-  and&nbsp;
-  <i>
-    <b className="purple">Data Structures & Algorithms (DSA).</b>
-  </i>
-  <br />
-  <br />
-  Whenever possible, I love combining my knowledge of&nbsp;
-  <i>
-    <b className="purple">Java </b>
-  </i>
-  and
-  <i>
-    <b className="purple"> Spring Boot Framework </b>
-  </i>
-  with&nbsp;
-  <i>
-    <b className="purple">Machine Learning </b>
-  </i>
-  to build real-world applications.
-</p>
-
+            <p
+              className="home-about-body"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              I fell in love with programming early on, and since then I’ve been
+              constantly learning and building. 🤷‍♂️
+              <br />
+              <br />I am fluent in programming languages like
+              <i>
+                <b className="purple"> Java, JavaScript, C, and Python. </b>
+              </i>
+              <br />
+              <br />
+              My primary interest lies in developing&nbsp;
+              <i>
+                <b className="purple">Full Stack (MERN) Web Applications</b> and
+                products.
+              </i>
+              <br />
+              <br />I am also passionate about&nbsp;
+              <i>
+                <b className="purple">Data Science </b>
+              </i>
+              and enjoy solving complex problems using&nbsp;
+              <i>
+                <b className="purple">Machine Learning </b>
+              </i>
+              and&nbsp;
+              <i>
+                <b className="purple">Data Structures & Algorithms (DSA).</b>
+              </i>
+              <br />
+              <br />
+              Whenever possible, I love combining my knowledge of&nbsp;
+              <i>
+                <b className="purple">Java </b>
+              </i>
+              and
+              <i>
+                <b className="purple"> Spring Boot Framework </b>
+              </i>
+              with&nbsp;
+              <i>
+                <b className="purple">Machine Learning </b>
+              </i>
+              to build real-world applications.
+            </p>
           </Col>
 
           {/* 🔹 Avatar Image */}
@@ -96,7 +96,11 @@ function Home2() {
               Feel free to <span className="purple">connect </span>with me
             </p>
             <ul className="home-about-social-links">
-              <li className="social-icons" data-aos="zoom-in" data-aos-delay="400">
+              <li
+                className="social-icons"
+                data-aos="zoom-in"
+                data-aos-delay="400"
+              >
                 <a
                   href="https://github.com/ADubey7"
                   target="_blank"
@@ -106,7 +110,11 @@ function Home2() {
                   <AiFillGithub />
                 </a>
               </li>
-              <li className="social-icons" data-aos="zoom-in" data-aos-delay="500">
+              <li
+                className="social-icons"
+                data-aos="zoom-in"
+                data-aos-delay="500"
+              >
                 <a
                   href="https://x.com/AshishDubeyARA"
                   target="_blank"
@@ -116,7 +124,11 @@ function Home2() {
                   <AiOutlineTwitter />
                 </a>
               </li>
-              <li className="social-icons" data-aos="zoom-in" data-aos-delay="600">
+              <li
+                className="social-icons"
+                data-aos="zoom-in"
+                data-aos-delay="600"
+              >
                 <a
                   href="https://www.linkedin.com/in/dubey-ashish2024/"
                   target="_blank"
@@ -126,7 +138,11 @@ function Home2() {
                   <FaLinkedinIn />
                 </a>
               </li>
-              <li className="social-icons" data-aos="zoom-in" data-aos-delay="700">
+              <li
+                className="social-icons"
+                data-aos="zoom-in"
+                data-aos-delay="700"
+              >
                 <a
                   href="https://www.instagram.com/ashishdubey.7/"
                   target="_blank"

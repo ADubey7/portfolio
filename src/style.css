@@ -306,10 +306,11 @@ button:focus {
 }
 
 .myAvtar img {
-  height: 250px;
-  width: 250px;
+  width: 250px;             /* control size */
+  height: 250px;            /* keep square for circle */
+  object-fit: cover;        /* fill circle */
+  object-position: 50% 20%;     /* shift focus to face */
   margin-top: 9em;
-  object-fit: cover;
   border-radius: 50%;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease;
@@ -318,6 +319,7 @@ button:focus {
 .myAvtar img:hover {
   transform: scale(1.05);
 }
+
 
 
 
