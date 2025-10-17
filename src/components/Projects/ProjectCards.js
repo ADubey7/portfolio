@@ -10,10 +10,17 @@ function ProjectCards(props) {
       className="project-card-view"
       data-aos="fade-up"
       data-aos-duration="800"
-      data-aos-delay={300 + (props.index * 100)} // Staggered animation based on index
-      data-aos-once="false" // Allow animation on every scroll
+      data-aos-delay={300 + (props.index * 100)}
     >
-      <Card.Img variant="top" src={props.imgPath} alt="card-img" />
+      <div className="project-img-wrapper">
+        <div className="laptop-mockup">
+          <div className="laptop-screen">
+            <Card.Img variant="top" src={props.imgPath} alt="card-img" />
+          </div>
+          <div className="laptop-bottom"></div>
+          <div className="laptop-base"></div>
+        </div>
+      </div>
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>
         <Card.Text style={{ textAlign: "justify" }}>

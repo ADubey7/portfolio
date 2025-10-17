@@ -4,12 +4,13 @@ import Preloader from "../src/components/Pre";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
+import Experience from "./components/Experience/Experience";  // ✅ Added
+import Certificates from "./components/Certificates/Certificates";
 import Projects from "./components/Projects/Projects";
 import Resume from "./components/Resume/ResumeNew";
 import ContactForm from "./components/Contactform/ContactForm";
 import Footer from "./components/Footer";
 import Section from "./components/Section";
-import Certificates from "./components/Certificates/Certificates";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -72,6 +73,11 @@ function App() {
 
         <Section id="about">
           <About />
+        </Section>
+
+        {/* ✅ Added Experience Section */}
+        <Section id="experience">
+          <Experience />
         </Section>
 
         <Section id="certificates" disableAOS={true}>

@@ -67,14 +67,30 @@ function NavBar() {
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link href="#certificates" onClick={() => updateExpanded(false)}>
-                <HiOutlineAcademicCap style={{ marginBottom: "2px" }} /> Certificates
+              <Nav.Link
+                href="#experience"
+                onClick={() => updateExpanded(false)}
+              >
+                <HiOutlineAcademicCap style={{ marginBottom: "2px" }} />{" "}
+                Experience
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                href="#certificates"
+                onClick={() => updateExpanded(false)}
+              >
+                <HiOutlineAcademicCap style={{ marginBottom: "2px" }} />{" "}
+                Certificates
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
               <Nav.Link href="#projects" onClick={() => updateExpanded(false)}>
-                <AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }} />{" "}
+                <AiOutlineFundProjectionScreen
+                  style={{ marginBottom: "2px" }}
+                />{" "}
                 Projects
               </Nav.Link>
             </Nav.Item>
@@ -102,7 +118,7 @@ function NavBar() {
               <ThemeToggle />
             </Nav.Item>
             */}
-          </Nav>  
+          </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>

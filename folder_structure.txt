@@ -60,6 +60,10 @@ C:.
         |       Techstack.js
         |       Toolstack.js
         |       
+        |+---Certificates
+        |       Certificates.js
+        |       Certificates.css
+        |
         +---Home
         |       Home.js
         |       Home2.js

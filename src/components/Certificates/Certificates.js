@@ -7,23 +7,26 @@ const Certificates = () => {
     {
       title: "Full Stack Java Development",
       org: "Simplilearn",
-      description: "Mastered full-stack development using Java, Spring Boot, SQL and web development technologies",
+      description:
+        "Mastered full-stack development using Java, Spring Boot, SQL and web development technologies",
       image: "/certi/Full Stack Java Development_page-0001.webp",
       tags: ["Java", "Spring Boot", "SQL", "Web Development"],
       link: "https://raw.githubusercontent.com/ADubey7/portfolio/main/cert/Full%20Stack%20Java%20Development_page-0001.webp",
     },
     {
-      title: "Full Stack Development Introduction", 
+      title: "Full Stack Development Introduction",
       org: "Infosys Springboard",
-      description: "Gained foundational knowledge in HTML, CSS, JavaScript and modern web development practices",
+      description:
+        "Gained foundational knowledge in HTML, CSS, JavaScript and modern web development practices",
       image: "/certi/Full Stack Development Introduction_page-0001.webp",
       tags: ["HTML", "CSS", "JavaScript", "Web Development Basics"],
       link: "https://raw.githubusercontent.com/ADubey7/portfolio/main/cert/Full%20Stack%20Development%20Introduction_page-0001.webp",
     },
     {
       title: "Fundamentals of DevOps on AWS",
-      org: "AWS | Simplilearn", 
-      description: "Learned DevOps principles, AWS cloud services, CI/CD pipelines and deployment automation",
+      org: "AWS | Simplilearn",
+      description:
+        "Learned DevOps principles, AWS cloud services, CI/CD pipelines and deployment automation",
       image: "/certi/Fundamentals of DevOps On AWS_page-0001.webp",
       tags: ["DevOps", "AWS", "CI/CD", "Cloud Deployment", "Scripting"],
       link: "https://raw.githubusercontent.com/ADubey7/portfolio/main/cert/Fundamentals%20of%20DevOps%20On%20AWS_page-0001.webp",
@@ -31,23 +34,31 @@ const Certificates = () => {
     {
       title: "Fundamentals of Information Security",
       org: "Infosys Springboard",
-      description: "Gained foundational knowledge of data protection, risk management, and security principles",
-      image: "/certi/Fundamentals of Information Security_page-0001.webp", 
-      tags: ["Cybersecurity", "Information Security", "Network Security", "Data Protection"],
+      description:
+        "Gained foundational knowledge of data protection, risk management, and security principles",
+      image: "/certi/Fundamentals of Information Security_page-0001.webp",
+      tags: [
+        "Cybersecurity",
+        "Information Security",
+        "Network Security",
+        "Data Protection",
+      ],
       link: "https://raw.githubusercontent.com/ADubey7/portfolio/main/cert/Fundamentals%20of%20Information%20Security_page-0001.webp",
     },
     {
       title: "Introduction to DevOps Tools",
       org: "Simplilearn",
-      description: "Mastered essential DevOps tools including Git, Jenkins, Docker, and Kubernetes",
+      description:
+        "Mastered essential DevOps tools including Git, Jenkins, Docker, and Kubernetes",
       image: "/certi/Introduction To DevOps Tools_page-0001.webp",
       tags: ["DevOps", "Git", "Jenkins", "Docker", "Kubernetes"],
       link: "https://raw.githubusercontent.com/ADubey7/portfolio/main/cert/Introduction%20To%20DevOps%20Tools_page-0001.webp",
     },
     {
       title: "Agile Scrum Master",
-      org: "Simplilearn", 
-      description: "Learned Agile methodologies, Scrum framework and effective team collaboration practices",
+      org: "Simplilearn",
+      description:
+        "Learned Agile methodologies, Scrum framework and effective team collaboration practices",
       image: "/certi/AgileScrumMaster.webp",
       tags: ["Agile", "Scrum", "Project Management", "Team Collaboration"],
       link: "https://raw.githubusercontent.com/ADubey7/portfolio/main/public/certi/Agile%20Scrum%20Master_page-0001.webp",
@@ -55,23 +66,36 @@ const Certificates = () => {
     {
       title: "C# - Comprehensive",
       org: "Infosys Springboard",
-      description: "Comprehensive understanding of C# programming, .NET framework and object-oriented concepts",
+      description:
+        "Comprehensive understanding of C# programming, .NET framework and object-oriented concepts",
       image: "/certi/CsharpComprehensive.webp",
-      tags: ["C#", ".NET", "Object-Oriented Programming", "Windows Applications"],
+      tags: [
+        "C#",
+        ".NET",
+        "Object-Oriented Programming",
+        "Windows Applications",
+      ],
       link: "https://raw.githubusercontent.com/ADubey7/portfolio/main/cert/C%23%20-%20Comprehensive_page-0001.webp",
     },
     {
-      title: "DSA in Java", 
+      title: "DSA in Java",
       org: "Apna College",
-      description: "Mastered data structures, algorithms and problem-solving techniques using Java",
+      description:
+        "Mastered data structures, algorithms and problem-solving techniques using Java",
       image: "/certi/DSA with java_page-0001.webp",
-      tags: ["Data Structures", "Algorithms", "Problem Solving", "Competitive Programming"],
+      tags: [
+        "Data Structures",
+        "Algorithms",
+        "Problem Solving",
+        "Competitive Programming",
+      ],
       link: "https://raw.githubusercontent.com/ADubey7/portfolio/main/cert/DSA%20with%20java_page-0001.webp",
     },
     {
       title: "Experiment 1 - Raspberry Pi based Weather Monitoring System",
       org: "Infosys Springboard",
-      description: "Built IoT-based weather monitoring system using Raspberry Pi, sensors and Python programming",
+      description:
+        "Built IoT-based weather monitoring system using Raspberry Pi, sensors and Python programming",
       image: "/certi/RaspberryPiWeatherSystempage.webp",
       tags: ["IoT", "Raspberry Pi", "Sensors", "Weather Monitoring", "Python"],
       link: "https://raw.githubusercontent.com/ADubey7/portfolio/main/cert/RaspberryPiWeatherSystempage.webp",
@@ -81,7 +105,7 @@ const Certificates = () => {
   return (
     <section id="certificates" className="cert-section">
       <div className="cert-container">
-        <h2 
+        <h2
           className="cert-title"
           data-aos="fade-up"
           data-aos-duration="600"
@@ -89,7 +113,7 @@ const Certificates = () => {
         >
           Achievements And Certifications 🏆
         </h2>
-        <p 
+        <p
           className="cert-subtitle"
           data-aos="fade-up"
           data-aos-duration="600"
@@ -100,34 +124,37 @@ const Certificates = () => {
 
         <div className="cert-grid">
           {certificates.map((cert, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="cert-card"
               data-aos="fade-up"
               data-aos-duration="600"
-              data-aos-delay={150 + (index * 50)} // Faster staggered animation
+              data-aos-delay={150 + index * 50} // Faster staggered animation
               data-aos-once="false"
             >
               <div className="cert-image-container">
-                <img 
-                  src={cert.image} 
+                <img
+                  src={cert.image}
                   alt={cert.title}
                   className="cert-image"
                   onError={(e) => {
-                    e.target.style.display = 'none';
-                    e.target.nextSibling.style.display = 'flex';
+                    e.target.style.display = "none";
+                    e.target.nextSibling.style.display = "flex";
                   }}
                 />
-                <div className="cert-image-fallback" style={{display: 'none'}}>
+                <div
+                  className="cert-image-fallback"
+                  style={{ display: "none" }}
+                >
                   <Award size={48} />
                   <span>Certificate</span>
                 </div>
               </div>
-              
+
               <div className="cert-content">
                 <h3 className="cert-card-title">{cert.title}</h3>
                 <p className="cert-description">{cert.description}</p>
-                
+
                 <div className="cert-tags">
                   {cert.tags.slice(0, 3).map((tag, i) => (
                     <span key={i} className="cert-tag">
@@ -136,15 +163,14 @@ const Certificates = () => {
                   ))}
                 </div>
 
-                <a 
-  href={cert.link} 
-  target="_blank" 
-  rel="noopener noreferrer" 
-  className="cert-btn"
->
-  Certification
-</a>
-
+                <a
+                  href={cert.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="cert-btn"
+                >
+                  Certification
+                </a>
               </div>
             </div>
           ))}

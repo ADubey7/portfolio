@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 // Project images
 import jobPortal from "../../Assets/Projects/job-portal.png";
@@ -12,30 +14,37 @@ import onlineBanking from "../../Assets/Projects/onlinebanking.png";
 import productDataExplorer from "../../Assets/Projects/productDataExplorer.png";
 
 function Projects() {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: true,
+      easing: "ease-out",
+    });
+  }, []);
+
   return (
-    <Container fluid className="project-section">
-      <Particle />
-      <Container>
-        {/* Heading with AOS Animation */}
-        <h1
-          className="project-heading"
-          data-aos="fade-up"
-          data-aos-duration="800"
-          data-aos-delay="100"
-        >
-          My <strong className="purple">Projects </strong>
-        </h1>
+  <Container fluid className="project-section">
+    <Particle />
+    <Container>
+      <h1
+        className="project-heading"
+        data-aos="fade-up"
+        data-aos-duration="800"
+        data-aos-delay="100"
+      >
+        <span style={{ color: "white" }}>My</span>{" "}
+        <strong className="purple">Projects</strong>
+      </h1>
 
-        <p
-          style={{ color: "white" }}
-          data-aos="fade-up"
-          data-aos-duration="800"
-          data-aos-delay="200"
-        >
-          Here are some of my personal projects.
-        </p>
+      <p
+        style={{ color: "white" }}
+        data-aos="fade-up"
+        data-aos-duration="800"
+        data-aos-delay="200"
+      >
+        Here are some of my personal projects.
+      </p>
 
-        {/* Projects Grid */}
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
@@ -44,7 +53,7 @@ function Projects() {
               title="React Job Portal"
               description="A full-stack MERN (MongoDB, Express, React, Node.js) job portal application that allows job seekers to find and apply for jobs, and employers to post and manage job listings. The project features secure authentication, file uploads, and a modern, responsive UI."
               ghLink="https://github.com/ADubey7/job-portal"
-              index={0} // Pass index for staggered animation
+              index={0}
             />
           </Col>
 
